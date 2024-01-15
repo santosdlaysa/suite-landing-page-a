@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: 'Epilogue', sans-serif;
     background-color: #F3EDE7;
+    display: grid;
 }
 
 header {
@@ -91,6 +92,10 @@ header > img {
     height: 600px;
 }
 
+.img-mobile{
+    display: none;
+
+}
 .button-two{
     background-color: #172339;
     border: 2px solid  #172339;
@@ -275,6 +280,31 @@ footer {
 }
 
 
-@media screen max-width d(768px) {
-    
+@media screen and (max-width: 768px) {
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 768px;
+    height: 1962px;
+}
+
+header {
+    width: 689px;
+    height: 56px;   
+}
+
+.container-principal{
+    display: grid;
+}
+
+.img-principal {
+    display: none;
+}
+
+.img-mobile{
+    display: flex;
+    width: 343px;
+    height: 240px;
+}
 }
