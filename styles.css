@@ -103,6 +103,11 @@ header > img {
     display: none;
 
 }
+
+.img-tablet{
+    display: none;
+
+}
 .button-two{
     background-color: #172339;
     border: 2px solid  #172339;
@@ -149,7 +154,7 @@ header > img {
     height: 96px;
     letter-spacing: 2.5px;
     text-transform: uppercase;
-    margin-top: -30px;
+    margin-top: 30px;
 }
 
 .container-terceiro {
@@ -231,7 +236,7 @@ header > img {
     letter-spacing: 2.5px;
     text-transform: uppercase;
     text-align: start;
-    margin-top: -1rem;
+    margin-top: 0.5rem;
     color: #F3EDE7;
 }
 
@@ -289,6 +294,16 @@ footer {
 
 @media screen and (max-width: 768px) {
 
+    header {
+        width: 689px;
+        height: 56px;
+        top: 40px;
+        left: 39px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+
     header { 
         width: 100vw;
         height: 56px;
@@ -333,8 +348,9 @@ footer {
         max-width: 60vw;
         width: 100vw;
         height: 50vh;
-        
-    
-    
+        }
+
+    .container-sub > p{
+        margin: 1rem;
     }
 }
