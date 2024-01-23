@@ -1,6 +1,9 @@
-body {
-    margin: 0 164px 0 166px;
+* {
+    margin: 0;
     padding: 0;
+}
+
+body {
     font-family: 'Epilogue', sans-serif;
     background-color: #F3EDE7;
     display: grid;
@@ -50,6 +53,10 @@ header > img {
     position: relative;
 }
 
+.img-mobile{
+    display: none;
+
+}
 .text-principal {
     color: #172339;
     margin-top: 2rem;
@@ -282,29 +289,52 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-body {
-    margin: 0;
-    padding: 0;
-    width: 768px;
-    height: 1962px;
-}
+    header { 
+        width: 100vw;
+        height: 56px;
+        padding: 1rem;
+    }
 
-header {
-    width: 689px;
-    height: 56px;   
-}
+    header > img {
+        width: 20vw;
+        height: 15vh;
+    }
 
-.container-principal{
-    display: grid;
-}
+    header > button {
+        width: 10vw;
+        max-width: 180px;
+        height: 5vh;
+        margin-right: 2rem;
+    }
 
-.img-principal {
-    display: none;
-}
+    .button-one{
+        font-size: 12px;
+    }
 
-.img-mobile{
-    display: flex;
-    width: 343px;
-    height: 240px;
-}
+    .button-two{
+        font-size: 12px;
+    }
+
+    .container-principal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: -5rem;
+        padding: 0;
+        height: 100vh;
+        width: 120vw;
+    }
+
+    .img-principal {
+        display: block;
+        position: relative;
+        right: 0;
+        margin-top: 5rem;
+        max-width: 60vw;
+        width: 100vw;
+        height: 50vh;
+        
+    
+    
+    }
 }
